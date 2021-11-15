@@ -1,1 +1,2 @@
-Video-Recorder-using-Flask-and-OpenCV/*.py linguist-vendored=false
+* linguist-vendored
+*.js linguist-vendored=false
