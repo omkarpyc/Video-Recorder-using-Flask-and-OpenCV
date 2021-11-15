@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>videoCapture</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body style="background: Black;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 data-aos="fade-down-left" style="text-align: center;font-size: 45px;font-family: 'Bree Serif', serif;margin-top: 40px;color: White;">Video Recorder using Flask and Opencv</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form method="post" action="{{ url_for('recording') }}">
+                    <div class="btn-toolbar justify-content-center" data-aos="fade-down-right" style="margin-top: 60px;">
+			            <input type="submit" value="Start/Stop Recording" name="rec"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center" style="margin-top: 50px;height: 700px;"><img data-aos="fade-up" src="{{ url_for('video') }}" style="height: 500px;width: 800px;margin-top: 100px;"></div>
+        </div>
+    </div>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
